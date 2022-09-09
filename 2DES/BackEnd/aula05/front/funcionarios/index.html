@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha - Funcionarios</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button onClick="showModal()">Adicionar Funcionario</button>
+    <div class="func">
+        <div class="funcionario model">
+            <p id="nome">Nome do Funcionario</p>
+            <p id="salario">Salario do Funcionario</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div class="modal model">
+        <div class="form-modal">
+            <input id="matricula" type="text" placeholder="Código do Funcionario">
+            <input id="nnome" type="text" placeholder="Nome do Funcionario">
+            <input id="cargo" type="text" placeholder="Quantidade do Funcionario">
+            <input id="ssalario" type="number" placeholder="Preço do Funcionario">
+            <input id="cpf" type="number" placeholder="CPF do Funcionario">
+            <button onClick="cadastrar()">Cadastrar</button>
+            <button id="cancel" onClick="showModal()">Cancelar</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

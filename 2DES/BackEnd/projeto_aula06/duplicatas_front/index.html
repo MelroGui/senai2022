@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Clientes</title>
+</head>
+<body onLoad="clientes()">
+    <table class="func" border="1">
+        <tbody class="item">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Endereco</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Uf</th>
+            </tr>
+            <tr class="cli modelo"> 
+                <td id="cod_cli"></td>
+                <td id="nome"></td>
+                <td id="endereco"></td>
+                <td id="bairro"></td>
+                <td id="cidade"></td>
+                <td id="uf"></td>
+                <td><button onClick="buscar()"><img src="./assets/phone_icon_136322.png" class="telIcon"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="modais">
+        <div id="modalTels" style="display:none;">
+            <table class="func" border="1">
+                <thead>
+                    <tr>
+                        <th>Codigo Cliente</th>
+                        <th>Tipo</th>
+                        <th>Numero</th>
+                        <th align="right"><button class="fechar"
+                            onclick="modais.setAttribute('style','display:none;')">X</button></th>
+                    </tr>
+                </thead>
+                <tbody class="tele">
+                    <tr class="tel modelo">
+                        <td id="cod_cliente"></td>
+                        <td id="tipo"></td>
+                        <td id="numero"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

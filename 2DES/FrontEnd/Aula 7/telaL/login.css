@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#usuar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 70px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#senha {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 70px;
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: 0;
+}
+
+.login {
+    border: 1px solid black;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+hr {
+    position: relative;
+    right: 70px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 40px;
+    width: 160px;
+    height: 35px;
+    position: relative;
+    right: 50px;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+}
+.invisivi{
+    visibility: hidden;
+}
+.error{
+    color: red;
+    margin-bottom: 10px;
+}
