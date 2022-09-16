@@ -8,20 +8,24 @@
     <title>Loja Japa</title>
 </head>
 <body onload="lancamentos()">
-    <h1>Livro Caixa</h1>
-    <hr>
+    <h1 style="background-color: red; color: white; border-bottom: 1px solid yellow;">Livro Caixa 力 <img src="../../docs/assets/logo.jpg" style="width: 80px; height:60px; position: relative; left: 40%; top: 5px; border-radius: 50%"></h1>
+
     <div class="content">
-        <label>Filtro</label>
-        <input type="date" id="filtro" onclick="opcoes()" onchange="mudar()">
-        <label>Novo Lançamento</label>
-        <button id="btnLanca" onclick="abrirModalCadastro()">+</button>
+        <div class="filter">
+            <label>Filtro</label>
+            <input type="date" id="filtro" onclick="opcoes()" onchange="mudar()">
+        </div>
+        <div class="cadas">
+            <label>Novo Lançamento</label>
+            <button id="btnLanca" onclick="abrirModalCadastro()" style="vertical-align:middle"><span>Cadastrar</span></button>
+        </div>
     </div>
-    <h1><hr></h1>
+    <h1 style="border-bottom: 1px solid yellow;"></h1>
     <div class="container">
         <div class="tab1">
             <table class="debTB" border="1px">
                 <thead>
-                    <caption>Debitos</caption>
+                    <caption style="color:white">Debitos</caption>
                     <tr>
                         <th>N_Lançamento</th>
                         <th>Data</th>
@@ -44,7 +48,7 @@
         <div class="tab2">
             <table class="credTB" border="1px">
                 <thead>
-                    <caption>Créditos</caption>
+                    <caption style="color:white">Créditos</caption>
                     <tr>
                         <th>N_Lançamento</th>
                         <th>Data</th>
