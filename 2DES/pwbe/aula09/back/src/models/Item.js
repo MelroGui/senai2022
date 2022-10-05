@@ -9,11 +9,11 @@ const toRead = (model) => {
 }
 
 const toReadNome = (model) => {
-    return `SELECT * FROM itens  WHERE denominacao like = %${model.denominacao}`;
+    return `SELECT * FROM itens  WHERE denominacao like '%${model.denominacao}%'`;
 }
 
 const toReadData = (model) => {
-    return `SELECT * FROM itens  WHERE aquisicao like = %${model.aquisical}`;
+    return `SELECT * FROM itens  WHERE aquisicao like '%${model.aquisicao}%'`;
 }
 
 const toUpdate = (model) => {

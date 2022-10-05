@@ -13,7 +13,7 @@ create table itens(
 
 describe itens;
 -- DML
-LOAD DATA INFILE 'D:/guim/Senai2022/2DES/pwbe/aula09/docs/bd/itens.csv'
+LOAD DATA INFILE 'D:/wellington/senai2022/2des/pwbe/aula09/docs/bd/itens.csv'
 INTO TABLE itens
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'

@@ -22,18 +22,6 @@ const listarItens = (req, res) => {
     });
 }
 
-const listarItemNome = (req, res) => {
-    con.query(Item.toRead(req.params), (err, result) => {
-        if (err == null)
-            if (result.length > 0)
-                res.json(result).end();
-            else
-                res.status(404).end();
-        else
-            res.status(500).end();
-    });
-}
-
 const listarItem = (req, res) => {
     con.query(Item.toRead(req.params), (err, result) => {
         if (err == null)
@@ -46,8 +34,20 @@ const listarItem = (req, res) => {
     });
 }
 
+const listarItemNome = (req, res) => {
+    con.query(Item.toReadNome(req.params), (err, result) => {
+        if (err == null)
+            if (result.length > 0)
+                res.json(result).end();
+            else
+                res.status(404).end();
+        else
+            res.status(500).end();
+    });
+}
+
 const listarItemData = (req, res) => {
-    con.query(Item.toRead(req.params), (err, result) => {
+    con.query(Item.toReadData(req.params), (err, result) => {
         if (err == null)
             if (result.length > 0)
                 res.json(result).end();
