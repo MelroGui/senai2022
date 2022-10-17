@@ -1,5 +1,5 @@
 const create = (model) => {
-    return `INSERT INTO produtos VALUES(${model.cod_produto},'${model.nome_produto}')`;
+    return `INSERT INTO produtos VALUES(${model.Cod_Produto},'${model.Nome_produto}')`;
 }
 
 const update = (model) => {
