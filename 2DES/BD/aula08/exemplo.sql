@@ -98,3 +98,8 @@ delimiter ;
 call insere_dados();
 -- Verificar se houve altarações;
 select * from dados_clientes;
+
+-- Vamos criar uma nova tabela apenas para teste
+create table itens_pedido
+select item_id, nome
+from pedidos;
