@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/prod.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <div class="itensH">
+            <a style="color:white;cursor: pointer;">Home</a>
+            <a style="color:white;cursor: pointer;">Produtos</a>
+        </div>
+        <div id="user">
+            <h3>Admin</h3>
+            <img src="../../docs/assets/avatar.png" alt="" id="imgU">
+        </div>
+    </header>
+    <section>
+        <button class="btnC" onclick="modal.setAttribute('style','display:flex');">Cadastrar</button>
+    </section>
+    <main>
+        <div class="divProd">
+            <img src="../../docs/assets/microcomputador.png" class="imgProd">
+            <p>6349c0f20333e09782ec6ad4</p>
+            <p>10001</p>
+            <p>06/10/2009</p>
+            <p>SERVIDOR ESCOLA MX203 ITAUTEC</p>
+            <p>R$ 22501.08</p>
+            <button class="btnEx">X</button>
+        </div>
+        <div id="modal" class="modal">
+            <div id="novo">
+                <div class="modalForm"> 
+                    <input type="text" id="Cod_dep" placeholder="NI"/>
+                    <input type="text" id="Nome_dep" placeholder="Aquisição"/>
+                    <input type="text" id="Nome_dep" placeholder="Denominação"/>
+                    <input type="text" id="Nome_dep" placeholder="Valor"/>
+                    <input type="text" id="Nome_dep" placeholder="Enviar mensagem"/>
+                </div>
+                <div class="modalFooter">
+                    <button onclick="modal.setAttribute('style','display:none')" class="btnEM">Cancelar</button>
+                    <button onclick="cadastrar()" class="btnCM">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avatars.css">
+    <title>Avatares</title>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Avatares</h1>
+        <button onclick="modal.setAttribute('style','display:flex');">Cadastrar Avatar</button>
+    </header>
+    <main id="avatars">
+    </main>
+    <div class="modal" id="modal">
+        <form action="http://localhost:4500/avatars" method="post" enctype="multipart/form-data" id="form">
+            <div class="form">
+                <div class="modalHeader">Cadastro de Avatares<button
+                        onclick="modal.setAttribute('style','display:none');">x</button></div>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required/>
+                <textarea id="endereco" name="endereco" placeholder="Endereço" required></textarea>
+                <textarea id="telefone" name="telefone" placeholder="Telefone" required></textarea>
+                <input type="file" id="foto" name="foto" />
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="avatars.js"></script>
+</html>
