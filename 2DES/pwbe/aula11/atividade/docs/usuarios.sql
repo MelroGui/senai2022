@@ -15,4 +15,4 @@ insert into usuarios values
 ("mauricioduarte","Mauricio Duarte","1998-01-20","(19)98787-33333",to_base64(LOAD_FILE("D:/guim/Senai2022/2DES/pwbe/aula11/atividade/docs/assets/avatar02.png"))),
 ("anamello","Ana Maria Mello","2008-08-22","(19)98888-7661",to_base64(LOAD_FILE("D:/guim/Senai2022/2DES/pwbe/aula11/atividade/docs/assets/avatar03.png")));
 
-select login, nome, nascimento, telefone from usuarios;
+select login, nome, nascimento, telefone from usuarios; 
