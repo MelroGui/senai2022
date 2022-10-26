@@ -3,9 +3,10 @@ import * as React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { RadioButton } from 'react-native-paper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-const img1 = require('../../../assets/tatu1.jpg');
+const img5 = require('../../../assets/tatu5.jpg');
 
-export default function Q1({ navigation}) {
+export default function Q5
+({ navigation}) {
         const [certo, setCerto] = useState("");
 
         const salvar = async () => {
@@ -21,8 +22,8 @@ export default function Q1({ navigation}) {
         return (
           <View>
              <View>
-                <Text style={style.titulo}>Quantos anos vive um Tatu?</Text>
-                <Image source={{uri: img1}} style={style.fuleco} />
+                <Text style={style.titulo}>Qual a principal diferença de um Tatu pra uma Capivara?</Text>
+                <Image source={{uri: img5}} style={style.fuleco} />
               </View>
           
               <View style={style.checo}>
@@ -31,7 +32,7 @@ export default function Q1({ navigation}) {
                     status={ certo === 'certo' ? 'checked' : 'unchecked' }
                     onPress={() => setCerto('certo')}
                   />
-                  <Text>15 Anos</Text>
+                  <Text>Capivara é um roedor Tatu é um Tatu</Text>
                   </View>
                   <View style={style.checo}>
                   <RadioButton 
@@ -39,7 +40,7 @@ export default function Q1({ navigation}) {
                     status={ certo === 'second' ? 'checked' : 'unchecked' }
                     onPress={() => setCerto('second')}
                   />
-                  <Text>50 Anos</Text>
+                  <Text>Tem diferença</Text>
                   </View>
                   <View style={style.checo}>
                   <RadioButton 
@@ -47,7 +48,7 @@ export default function Q1({ navigation}) {
                     status={ certo === 'tird' ? 'checked' : 'unchecked' }
                     onPress={() => setCerto('tird')}
                   />
-                  <Text>500 Anos</Text>
+                  <Text>Tatu é foda Capivara nem tanto</Text>
                   </View>
                   <View style={style.checo}>
                   <RadioButton 
@@ -55,19 +56,10 @@ export default function Q1({ navigation}) {
                     status={ certo === 'quatro' ? 'checked' : 'unchecked' }
                     onPress={() => setCerto('quatro')}
                   />
-                  <Text>2 meses</Text>
-                  </View>
-                  <View style={style.checo}>
-                  <RadioButton 
-                    value="quinta"
-                    status={ certo === 'quinta' ? 'checked' : 'unchecked' }
-                    onPress={() => setCerto('quinta')}
-                  />
-                  <Text>Pra Sempre</Text>
-                  </View>
-          
+                  <Text>Ok I Pull Up</Text>
+                  </View>     
               <View>
-                  <TouchableOpacity style={style.btnStart} onPress={() => { navigation.navigate('Q2'), salvar() }}>
+                  <TouchableOpacity style={style.btnStart} onPress={() => { navigation.navigate('result'), salvar() }}>
                     <Text style={style.text}>Proxima Quest</Text>
                   </TouchableOpacity>
               </View>
@@ -111,5 +103,9 @@ const style = StyleSheet.create({
        flexDirection: 'row',
        textAlign: 'center',
        alignItems: 'center'
+    },
+    Video: {
+      width: '100%',
+      height: '30vh'
     }
   });
