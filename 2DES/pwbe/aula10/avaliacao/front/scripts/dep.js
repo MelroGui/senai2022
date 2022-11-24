@@ -4,13 +4,13 @@ const uri = 'http://localhost:3000/solicitacoes/dept';
 function carregar() {
     const options = { method: 'GET' };
 
-    fetch(uri, options)
-        .then(resp => resp.json())
-        .then(resp => {
-            data = resp;
-            preecherTabela();
-        })
-        .catch(err => console.error(err));
+        fetch(uri, options)
+            .then(resp => resp.json())
+            .then(resp => {
+                data = resp;
+                preecherTabela();
+            })
+            .catch(err => console.error(err));
 }
 
 function cadastrar() {
