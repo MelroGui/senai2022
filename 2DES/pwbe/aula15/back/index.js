@@ -16,5 +16,5 @@ const app = express()
     .use('/Tratamento',Tratamento);
 
 app.listen(PORT, () => {
-    console.log('Servidor em execução na porta ' + PORT);
+    console.log('Bom dia com uma fro proce na porta ' + PORT);
 });

@@ -10,6 +10,16 @@ const readAll = (req, res) => {
     });
 }
 
+const readProf = (req, res) => {
+    con.query(Profissional.readProf(req.params), (err, result) => {
+        if (err == null)
+            res.status(200).json(result).end();
+        else
+            res.status(500).end();
+    });
+}
+
 module.exports = {
-    readAll
+    readAll,
+    readProf
 }

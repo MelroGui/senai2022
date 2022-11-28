@@ -35,7 +35,7 @@ const del = (req, res) => {
 }
 
 const update = (req, res) => {
-    con.query(Tratamento.update(req.body), (err, result) => {
+    con.query(Tratamento.update(req.params), (err, result) => {
         if (err == null)
             res.status(201).end();
         else
